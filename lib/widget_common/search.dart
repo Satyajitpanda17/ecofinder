@@ -1,25 +1,21 @@
 import 'package:ecofinder/consts/consts.dart';
 
-Widget searchBar({controller}) {
-  return TextFormField(
-    controller: controller,
+Widget searchBar({String? hint}) {
+  return TextField(
+    //controller: _searchController,
     decoration: InputDecoration(
-      hintStyle: const TextStyle(
-        fontFamily: regular,
-        color: Color.fromARGB(255, 149, 142, 142),
-      ),
-      hintText: 'Search your Location',
-      suffixIcon: IconButton(
-        onPressed: () {},
+      hintText: hint,
+      // Add a clear button to the search bar
+      suffixIcon: IconButton(icon: const Icon(Icons.clear), onPressed: () {}),
+      // Add a search icon or button to the search bar
+      prefixIcon: IconButton(
         icon: const Icon(Icons.search),
+        onPressed: () {
+          // Perform the search here
+        },
       ),
-      isDense: true,
-      // fillColor: Colors.blueGrey,
-      filled: true,
-      border: InputBorder.none,
-      focusedBorder: OutlineInputBorder(
-        borderSide: const BorderSide(color: Colors.black),
-        borderRadius: BorderRadius.circular(8),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(10.0),
       ),
     ),
   );

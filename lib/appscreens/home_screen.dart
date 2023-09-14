@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: 'Home',
-              backgroundColor: Colors.amberAccent),
+              backgroundColor: Colors.grey),
           BottomNavigationBarItem(
               icon: Icon(Icons.call),
               label: 'Call',
@@ -38,14 +38,17 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.people),
             label: 'person',
+            backgroundColor: Colors.grey,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.music_note),
             label: 'music',
+            backgroundColor: Colors.grey,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
             label: 'Home',
+            backgroundColor: Colors.grey,
           ),
         ],
       ),
@@ -63,8 +66,11 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 padding: const EdgeInsets.all(8),
                 width: context.screenWidth * 0.95,
-                height: context.screenHeight * 0.25,
-                color: const Color.fromARGB(255, 139, 246, 16),
+                height: context.screenHeight * 0.35,
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 139, 246, 16),
+                  borderRadius: BorderRadius.circular(8),
+                ),
                 child: Padding(
                   padding: const EdgeInsets.all(6),
                   child: Column(
@@ -207,7 +213,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   .black
                   .make(),
               (context.screenHeight * 0.03).heightBox,
-              const SearchBar(),
+              const SearchBar(hintText: 'Search your dump Location'),
               (context.screenHeight * 0.04).heightBox,
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -231,7 +237,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Expanded(
                   child: Container(
                     width: context.screenWidth * 0.8,
-                    height: context.screenHeight * 0.25,
+                    height: context.screenHeight * 0.3,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Color.fromARGB(154, 2, 200, 35),
