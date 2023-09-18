@@ -1,7 +1,8 @@
 import 'package:ecofinder/consts/consts.dart';
-import 'package:ecofinder/widget_common/search.dart';
+//import 'package:ecofinder/consts/list.dart';
+//import 'package:ecofinder/widget_common/search.dart';
 import 'package:ecofinder/widget_common/worktile.dart';
-import 'package:ecofinder/widget_common/imageslider.dart';
+//import 'package:ecofinder/widget_common/imageslider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -105,19 +106,36 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
               10.heightBox,
-              Padding(
-                padding: EdgeInsets.all(8),
-                child: Container(
-                  // padding: EdgeInsets.all(8),
-                  width: context.screenWidth * 0.7,
-                  height: context.screenHeight * 0.2,
-                  //color: Colors.amberAccent,
-                  child: Image.asset(
-                    slide1,
-                    width: context.screenWidth * 0.7,
-                  ),
-                ),
-              ),
+              VxSwiper.builder(
+                  aspectRatio: 16 / 9,
+                  autoPlay: true,
+                  height: context.screenHeight * 0.16,
+                  enlargeCenterPage: true,
+                  itemCount: sliderList.length,
+                  itemBuilder: (context, index) {
+                    return Image.asset(
+                      sliderList[index],
+                      fit: BoxFit.fitWidth,
+                    )
+                        .box
+                        .rounded
+                        .clip(Clip.antiAlias)
+                        .margin(EdgeInsets.symmetric(horizontal: 8))
+                        .make();
+                  }),
+              // Padding(
+              //   padding: EdgeInsets.all(8),
+              //   child: Container(
+              //     // padding: EdgeInsets.all(8),
+              //     width: context.screenWidth * 0.7,
+              //     height: context.screenHeight * 0.2,
+              //     //color: Colors.amberAccent,
+              //     child: Image.asset(
+              //       slide1,
+              //       width: context.screenWidth * 0.7,
+              //     ),
+              //   ),
+              // ),
               (context.screenHeight * 0.001).heightBox,
               Padding(
                 padding: EdgeInsets.all(8),
