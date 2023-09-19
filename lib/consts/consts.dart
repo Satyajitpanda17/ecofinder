@@ -4,3 +4,4 @@ export 'package:flutter/material.dart';
 export './images.dart';
 export './fonts.dart';
 export './list.dart';
+export './strings.dart';

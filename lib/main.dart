@@ -1,4 +1,4 @@
-import 'package:ecofinder/appscreens/home_screen.dart';
+import 'package:ecofinder/appscreens/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.transparent),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const Home(),
     );
   }
 }

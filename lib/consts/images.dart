@@ -14,3 +14,5 @@ const comm = 'assets/images/community.png';
 const love = 'assets/images/heart.png';
 const notification = 'assets/images/notif.png';
 const slide1 = 'assets/images/Slide1.png';
+const arrow = 'assets/images/arrow.png';
+const logout = 'assets/images/log_out.png';
