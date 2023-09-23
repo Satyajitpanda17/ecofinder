@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     var controller = Get.put(HomeController());
     var navBarItem = [
-      BottomNavigationBarItem(
+      const BottomNavigationBarItem(
         icon: ImageIcon(
           AssetImage(ichome),
           size: 20,
@@ -26,7 +26,7 @@ class Home extends StatelessWidget {
         label: 'Home',
         backgroundColor: Colors.white,
       ),
-      BottomNavigationBarItem(
+      const BottomNavigationBarItem(
           icon: ImageIcon(
             AssetImage(icmap),
             size: 20,
@@ -34,16 +34,16 @@ class Home extends StatelessWidget {
           ),
           label: 'Map',
           backgroundColor: Colors.white),
-      BottomNavigationBarItem(
+      const BottomNavigationBarItem(
         icon: ImageIcon(
-          AssetImage(icglobe),
+          AssetImage(icdevice),
           size: 20,
           //color: Colors.black,
         ),
-        label: 'Globe',
+        label: 'Device',
         backgroundColor: Colors.white,
       ),
-      BottomNavigationBarItem(
+      const BottomNavigationBarItem(
         icon: ImageIcon(
           AssetImage(icprofile),
           size: 20,
@@ -54,10 +54,10 @@ class Home extends StatelessWidget {
       ),
     ];
     var navBody = [
-      HomeScreen(),
-      LocationScreen(),
-      DeviceScreen(),
-      ProfileScreen(),
+      const HomeScreen(),
+      const LocationScreen(),
+      const DeviceScreen(),
+      const ProfileScreen(),
     ];
 
     return Scaffold(

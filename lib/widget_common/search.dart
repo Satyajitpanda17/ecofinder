@@ -1,13 +1,14 @@
 import 'package:ecofinder/consts/consts.dart';
 
 Widget searchBar({String? hint}) {
-  return TextField(
+  return TextFormField(
     //controller: _searchController,
     decoration: InputDecoration(
+      //suffixIcon: IconButton(icon: const Icon(Icons.clear), onPressed: () {}),
+      filled: true,
+      fillColor: Color.fromRGBO(240, 240, 240, 0.362),
       hintText: hint,
-      // Add a clear button to the search bar
-      suffixIcon: IconButton(icon: const Icon(Icons.clear), onPressed: () {}),
-      // Add a search icon or button to the search bar
+      hintStyle: TextStyle(color: Colors.black26),
       prefixIcon: IconButton(
         icon: const Icon(Icons.search),
         onPressed: () {
@@ -15,7 +16,7 @@ Widget searchBar({String? hint}) {
         },
       ),
       border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(10.0),
+        borderRadius: BorderRadius.circular(20.0),
       ),
     ),
   );

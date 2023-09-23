@@ -5,3 +5,4 @@ const settings = "Settings";
 const fb = "Feedback";
 const pp = "Privacy Policy";
 const signout = "Log Out";
+const location = "Your current Location";

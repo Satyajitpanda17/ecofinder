@@ -30,7 +30,7 @@ Widget Worktile({String? image, String? title, String? boxtext}) {
                 height: 30,
                 width: 50,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 63, 113, 6),
+                  color: Colors.green[800],
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Center(

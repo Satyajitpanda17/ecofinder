@@ -21,7 +21,7 @@ class ProfileScreen extends StatelessWidget {
                 width: context.screenWidth * 0.95,
                 height: context.screenHeight * 0.25,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(192, 69, 117, 15),
+                  color: Colors.green,
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Padding(
