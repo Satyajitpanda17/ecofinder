@@ -52,7 +52,7 @@ class _DeviceScreenState extends State<DeviceScreen> {
                   ),
                   legendOptions: LegendOptions(
                     showLegends: true,
-                    legendShape: BoxShape.rectangle,
+                    legendShape: BoxShape.circle,
                   ),
                 ),
               ),

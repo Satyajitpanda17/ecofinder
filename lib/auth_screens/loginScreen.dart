@@ -1,4 +1,5 @@
 import 'package:ecofinder/appscreens/home.dart';
+import 'package:ecofinder/auth_screens/signupScreen.dart';
 import 'package:ecofinder/consts/consts.dart';
 import 'package:ecofinder/widget_common/custom_textfield.dart';
 
@@ -40,8 +41,35 @@ class LoginScreen extends StatelessWidget {
                   child: login.text.fontFamily(bold).white.size(20).make(),
                 ),
               ),
-              //5.heightBox,
-
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width / 2.5,
+                    height: 1,
+                    color: Color.fromARGB(244, 3, 96, 19),
+                  ),
+                  4.widthBox,
+                  "OR".text.fontFamily(bold).size(20).black.make(),
+                  4.widthBox,
+                  Container(
+                    width: MediaQuery.of(context).size.width / 2.5,
+                    height: 1,
+                    color: Color.fromARGB(244, 3, 96, 19),
+                  ),
+                ],
+              ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(80, 0, 80, 0),
+                child: ElevatedButton(
+                  onPressed: () {
+                    Get.to(() => const SignUpScreen());
+                  },
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromARGB(244, 3, 96, 19)),
+                  child: signup.text.fontFamily(bold).white.size(20).make(),
+                ),
+              ),
               //5.heightBox,
               Center(
                 child: IconButton(

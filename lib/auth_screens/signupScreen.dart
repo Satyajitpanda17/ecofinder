@@ -45,8 +45,8 @@ class SignUpScreen extends StatelessWidget {
                 ),
               ),
               //5.heightBox,
-              Padding(
-                padding: const EdgeInsets.fromLTRB(50, 0, 40, 0),
+
+              Center(
                 child: Row(
                   children: [
                     logged_in.text.fontFamily(bold).black.size(15).make(),
@@ -64,6 +64,7 @@ class SignUpScreen extends StatelessWidget {
                   ],
                 ),
               ),
+
               //15.heightBox,
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,

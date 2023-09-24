@@ -1,4 +1,5 @@
 import 'package:ecofinder/appscreens/home.dart';
+import 'package:ecofinder/auth_screens/loginScreen.dart';
 import 'package:ecofinder/auth_screens/signupScreen.dart';
 import 'package:ecofinder/consts/consts.dart';
 
@@ -11,8 +12,8 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   changeScreen() {
-    Future.delayed(Duration(seconds: 1), () {
-      Get.to(() => const SignUpScreen());
+    Future.delayed(Duration(seconds: 2), () {
+      Get.to(() => const LoginScreen());
     });
   }
 

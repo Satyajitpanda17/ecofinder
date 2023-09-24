@@ -11,7 +11,8 @@ class HomeScreen extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Container(
-        width: screenWidth,
+        width: context.screenWidth,
+        height: context.screenHeight,
         color: Colors.white,
         child: Padding(
           padding: EdgeInsets.all(15),
@@ -41,9 +42,10 @@ class HomeScreen extends StatelessWidget {
               10.heightBox,
               VxSwiper.builder(
                   aspectRatio: 16 / 9,
-                  autoPlay: true,
+                  autoPlay: false,
+                  enableInfiniteScroll: false,
                   height: context.screenHeight * 0.16,
-                  enlargeCenterPage: true,
+                  // enlargeCenterPage: true,
                   itemCount: sliderList.length,
                   itemBuilder: (context, index) {
                     return Image.asset(
@@ -62,7 +64,7 @@ class HomeScreen extends StatelessWidget {
                 child: Container(
                   // padding: EdgeInsets.all(8),
                   width: context.screenWidth * 0.7,
-                  height: context.screenHeight * 0.1,
+                  height: context.screenHeight * 0.15,
                   //color: Colors.amberAccent,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,

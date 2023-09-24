@@ -19,7 +19,7 @@ class ProfileScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(8),
                 width: context.screenWidth * 0.95,
-                height: context.screenHeight * 0.25,
+                height: context.screenHeight * 0.3,
                 decoration: BoxDecoration(
                   color: Colors.green,
                   borderRadius: BorderRadius.circular(8),
