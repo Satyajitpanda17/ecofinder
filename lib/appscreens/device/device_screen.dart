@@ -19,11 +19,7 @@ class _DeviceScreenState extends State<DeviceScreen> {
     "Plastic Materials": 35,
     "Hazardous Metals": 45,
   };
-  List<Color> colorList = [
-    Colors.green,
-    Colors.blue,
-    Colors.red,
-  ];
+
   @override
   Widget build(BuildContext context) {
     //double screenWidth = MediaQuery.of(context).size.width;

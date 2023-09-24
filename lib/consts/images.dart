@@ -19,3 +19,5 @@ const arrow = 'assets/images/arrow.png';
 const logout = 'assets/images/log_out.png';
 const star = 'assets/images/stars.png';
 const deviceimg = 'assets/images/deviceimg.png';
+const logo = 'assets/images/applogo.png';
+const icgoogle = 'assets/images/google.png';

@@ -1,3 +1,5 @@
+const appname = "ECO FINDER";
+const work = "FINDS YOUR WAY TO LOCATE AND DISPOSE YOUR E-WASTE";
 const account = "My Account";
 const credit = "Credits";
 const aware = "Awareness and Tips";
@@ -6,3 +8,9 @@ const fb = "Feedback";
 const pp = "Privacy Policy";
 const signout = "Log Out";
 const location = "Your current Location";
+const login = "Login";
+const email = "Email";
+const password = "Password";
+const retypepassword = "Confirm Password";
+const signup = "Sign In";
+const logged_in = "Already have an account ?";
