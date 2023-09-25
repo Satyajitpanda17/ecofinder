@@ -1,5 +1,8 @@
 //import 'package:flutter/material.dart';
 import 'package:ecofinder/consts/consts.dart';
+import 'package:ecofinder/appscreens/profile/awaretip.dart';
+import 'package:ecofinder/appscreens/profile/credit_body.dart';
+import 'package:ecofinder/appscreens/profile/profile_body.dart';
 import 'package:ecofinder/widget_common/profiletile.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -159,11 +162,84 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
               (context.screenHeight * 0.07).heightBox,
-              profileTile(title: account),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(40, 3, 10, 3),
+                child: Container(
+                  child: Row(
+                    children: [
+                      "My Account"
+                          .text
+                          .fontFamily(semibold)
+                          .color(Colors.grey)
+                          .size(20)
+                          .make(),
+                      // 30.widthBox,
+                      Spacer(),
+                      IconButton(
+                        onPressed: () {
+                          Get.to(() => const ProfileBody());
+                        },
+                        icon: Image.asset(arrow),
+                        // alignment: Alignment.centerRight,
+                      )
+                    ],
+                  ),
+                ),
+              ),
+
+              //profileTile(title: account),
               15.heightBox,
-              profileTile(title: credit),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(40, 3, 10, 3),
+                child: Container(
+                  child: Row(
+                    children: [
+                      "Credits"
+                          .text
+                          .fontFamily(semibold)
+                          .color(Colors.grey)
+                          .size(20)
+                          .make(),
+                      // 30.widthBox,
+                      Spacer(),
+                      IconButton(
+                        onPressed: () {
+                          Get.to(() => const CreditBody());
+                        },
+                        icon: Image.asset(arrow),
+                        // alignment: Alignment.centerRight,
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              // profileTile(title: credit),
               15.heightBox,
-              profileTile(title: aware),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(40, 3, 10, 3),
+                child: Container(
+                  child: Row(
+                    children: [
+                      "Awareness and Tips"
+                          .text
+                          .fontFamily(semibold)
+                          .color(Colors.grey)
+                          .size(20)
+                          .make(),
+                      // 30.widthBox,
+                      Spacer(),
+                      IconButton(
+                        onPressed: () {
+                          Get.to(() => const AwarenessTipsScreen());
+                        },
+                        icon: Image.asset(arrow),
+                        // alignment: Alignment.centerRight,
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              //profileTile(title: aware),
               15.heightBox,
               profileTile(title: settings),
               15.heightBox,
@@ -172,7 +248,7 @@ class ProfileScreen extends StatelessWidget {
               profileTile(title: pp),
               15.heightBox,
               Padding(
-                padding: EdgeInsets.fromLTRB(20, 5, 10, 5),
+                padding: const EdgeInsets.fromLTRB(20, 5, 10, 5),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [

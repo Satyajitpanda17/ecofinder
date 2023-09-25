@@ -45,6 +45,7 @@ class HomeScreen extends StatelessWidget {
                   autoPlay: false,
                   enableInfiniteScroll: false,
                   height: context.screenHeight * 0.16,
+                  //
                   // enlargeCenterPage: true,
                   itemCount: sliderList.length,
                   itemBuilder: (context, index) {

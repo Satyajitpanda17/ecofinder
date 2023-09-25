@@ -28,13 +28,25 @@ class LocationScreen extends StatelessWidget {
                 address: "Nayapalli,Bhubaneswar",
                 time: 8),
             LocationTile(
-                dumpname: "BMC Dump Yard",
-                address: "Nayapalli,Bhubaneswar",
-                time: 8),
+              dumpname: centre_1,
+              address: address_1,
+              time: 9,
+            ),
             LocationTile(
-                dumpname: "BMC Dump Yard",
-                address: "Nayapalli,Bhubaneswar",
-                time: 8),
+              dumpname: centre_2,
+              address: address_2,
+              time: 9,
+            ),
+            LocationTile(
+              dumpname: centre_3,
+              address: address_3,
+              time: 10,
+            ),
+            LocationTile(
+              dumpname: centre_4,
+              address: address_4,
+              time: 9,
+            ),
             // 5.heightBox,
             Padding(
               padding: EdgeInsets.fromLTRB(60, 0, 60, 0),
